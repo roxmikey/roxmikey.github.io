@@ -1,0 +1,10 @@
+
+Images that could not be converted here:
+- IMG_5271.HEIC :: No HEIC decoder available
+- IMG_5686.HEIC :: No HEIC decoder available
+- IMG_5695.HEIC :: No HEIC decoder available
+- IMG_5859.HEIC :: No HEIC decoder available
+- IMG_5884.HEIC :: No HEIC decoder available
+- IMG_7185.HEIC :: No HEIC decoder available
+- IMG_7190.HEIC :: No HEIC decoder available
+- IMG_7193.HEIC :: No HEIC decoder available
