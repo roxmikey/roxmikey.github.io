@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Automatic sliding gate">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#1d2026"/><stop offset="1" stop-color="#14161a"/>
+</linearGradient>
+<pattern id="rack" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(115)">
+<rect width="18" height="18" fill="none"/><rect width="1.5" height="18" fill="rgba(255,255,255,0.04)"/>
+</pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#g)"/>
+<rect width="1600" height="1000" fill="url(#rack)"/>
+<g opacity="0.9"><line x1="650.0" y1="290.0" x2="650.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="700.0" y1="290.0" x2="700.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="750.0" y1="290.0" x2="750.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="800.0" y1="290.0" x2="800.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="850.0" y1="290.0" x2="850.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="900.0" y1="290.0" x2="900.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="950.0" y1="290.0" x2="950.0" y2="400.0" stroke="#f7a600" stroke-width="3"/><line x1="610.0" y1="290.0" x2="990.0" y2="290.0" stroke="#f5f4f1" stroke-width="3"/><line x1="610.0" y1="400.0" x2="990.0" y2="400.0" stroke="#f5f4f1" stroke-width="3"/><line x1="540.0" y1="422.0" x2="1060.0" y2="422.0" stroke="#f5f4f1" stroke-width="3" stroke-dasharray="10 6"/></g>
+<rect x="0" y="994" width="1600" height="6" fill="#f7a600"/>
+<text x="800.0" y="620.0" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="75" font-weight="700" fill="#f5f4f1" text-anchor="middle" letter-spacing="2" style="text-transform:uppercase">AUTOMATIC SLIDING GATE</text>
+<text x="800.0" y="690.0" font-family="Archivo, Arial, sans-serif" font-size="28" fill="#9aa0a8" text-anchor="middle">Placeholder - replace with a real photo (same file name)</text>
+</svg>

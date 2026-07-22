@@ -1,0 +1,163 @@
+@import "tailwindcss";
+@import "@fontsource/barlow-condensed/500.css";
+@import "@fontsource/barlow-condensed/600.css";
+@import "@fontsource/barlow-condensed/700.css";
+@import "@fontsource/archivo/400.css";
+@import "@fontsource/archivo/500.css";
+@import "@fontsource/archivo/600.css";
+@import "@fontsource/archivo/700.css";
+
+/* ============================================================
+   Design tokens - Brisbane Access Solutions
+   Palette: industrial charcoal + bone white + signal amber
+   (the amber of a gate beacon light)
+   ============================================================ */
+@theme {
+  --color-ink: #14161a;
+  --color-steel: #1d2026;
+  --color-steel-2: #262a31;
+  --color-line: #e4e2dc;
+  --color-line-dark: #33383f;
+  --color-bone: #f5f4f1;
+  --color-paper: #ffffff;
+  --color-graphite: #565b63;
+  --color-mist: #9aa0a8;
+  --color-amber: #f7a600;
+  --color-amber-deep: #9a6700;
+
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-bone);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 3px solid var(--color-amber);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Signature motif: the gate track.
+   A thin rail with a sliding amber carriage - echoes a sliding
+   gate moving along its track. Used under section eyebrows.
+   ============================================================ */
+.track {
+  position: relative;
+  display: block;
+  width: 72px;
+  height: 3px;
+  background: var(--color-line);
+  overflow: hidden;
+}
+.track::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 26px;
+  background: var(--color-amber);
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.on-dark .track { background: var(--color-line-dark); }
+section:hover .track::after,
+.track-run::after {
+  transform: translateX(46px);
+}
+
+/* Service card: top rail slides open like a gate on hover */
+.card-rail {
+  position: relative;
+  overflow: hidden;
+}
+.card-rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--color-line);
+}
+.card-rail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 34%;
+  background: var(--color-amber);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-rail:hover::after,
+.card-rail:focus-within::after {
+  transform: translateX(194%);
+}
+
+/* Subtle "gate rack" texture for dark hero panels */
+.rack-texture {
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.025) 0px,
+    rgba(255, 255, 255, 0.025) 1px,
+    transparent 1px,
+    transparent 14px
+  );
+}
+
+/* Beacon dot - small pulsing amber indicator used with trust items */
+.beacon {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--color-amber);
+  box-shadow: 0 0 0 0 rgba(247, 166, 0, 0.5);
+  animation: beacon-pulse 2.6s ease-out infinite;
+}
+@keyframes beacon-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(247, 166, 0, 0.45); }
+  60% { box-shadow: 0 0 0 9px rgba(247, 166, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(247, 166, 0, 0); }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .track::after, .card-rail::after { transition: none; }
+  .beacon { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
