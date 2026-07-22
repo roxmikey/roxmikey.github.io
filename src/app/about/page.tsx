@@ -41,8 +41,11 @@ export default function AboutPage() {
               {/* EDIT ME: Replace this placeholder with your real business history - e.g. how the
                   business started, years in the industry, and any licences or qualifications you
                   hold. Don't publish specific claims unless they're accurate. */}
-              [Placeholder - add your business history here: how the business started, background in
-              the industry, and any licences or qualifications you&apos;d like to mention.]
+              Brisbane Access Solutions grew from more than 10 years of experience in the industry,
+              beginning with garage door installation before moving into automatic gates, access control and automation.
+              That background includes residential and commercial installations, repairs, servicing and complex fault finding across a wide range of motors and systems.
+              The business was started to provide customers with a more knowledgeable, practical and honest alternative when their gate or garage door needs attention.
+
             </p>
             <p>
               What that experience means for you is simple: faster fault finding, fewer parts
