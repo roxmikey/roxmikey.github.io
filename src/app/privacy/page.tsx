@@ -18,8 +18,7 @@ export default function PrivacyPage() {
     <div className="mx-auto max-w-3xl px-4 sm:px-6 py-16">
       <h1 className="text-5xl mb-3">Privacy Policy</h1>
       <p className="text-sm text-graphite mb-10">
-        Last updated: [insert date]. This template is a starting point and should be reviewed by a
-        legal professional before publication.
+        Last updated: 22nd July 2026
       </p>
       <div className="space-y-8 text-graphite leading-relaxed [&_h2]:text-2xl [&_h2]:text-ink [&_h2]:mb-2">
         <section>
