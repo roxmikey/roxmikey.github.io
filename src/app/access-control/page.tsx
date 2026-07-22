@@ -6,7 +6,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { Reveal } from "@/components/Reveal";
 import { ServiceJsonLd } from "@/components/JsonLd";
 import { Checklist } from "@/components/Checklist";
-import accessImg from "../../../public/images/access-control.jpg";
+import accessImg from "../../../public/images/access-control.png";
 
 export const metadata = pageMetadata({
   title: "Access Control Brisbane - Keypads, Intercoms & Smart Access",
