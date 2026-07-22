@@ -8,7 +8,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { Checklist } from "@/components/Checklist";
 import { CtaBand } from "@/components/CtaBand";
 import { Reveal } from "@/components/Reveal";
-import heroImg from "../../public/images/hero-gate.svg";
+import heroImg from "../../public/images/hero-gate.jpg";
 import gateImg from "../../public/images/sliding-gate.svg";
 import doorImg from "../../public/images/garage-door.svg";
 
